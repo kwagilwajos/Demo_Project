@@ -10,6 +10,7 @@
 2. Deployment - Containerization technology used is docker which is an open source technology.
    The application is packed as an image which is built from java runtime environment version 11.
    The image can deployed as a single instance or replicated depending on the performance requirements.
+
 3. To start the mysql database use command :
    `docker compose up -d mysql` ,make sure you run this command in the same directory as docker compose file and the DB properties can be 
     altered inside the docker compose file.
