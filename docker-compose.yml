@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  demo-service:
+    image: bank_x_webservice_uat_v1:0.0.1
+    build: .
+
+  mysql:
+    image: mysql/mysql-server:8.0.27-1.2.6-server
+    container_name: bank_x_mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=8@nk_x_PA55CoD3
+      - MYSQL_USER=demo_user
+      - MYSQL_PASSWORD=8@nk_x_PA55CoD3
+      - MYSQL_DATABASE=demo
+      - MYSQL_ROOT_HOST=%
